@@ -1,0 +1,59 @@
+ Ternary operator has precedence : RIGHT -> LEFT
+ Assignment operator "=" has precedence : RIGHT -> LEFT
+
+ True : 1 False : 0
+
+
+ HIERARCHY OF OPERATORS :
+ ()  >  */%  >  +-  >  <<=>>=  >  ==!=   >  &&  >  ||
+
+ If two numbers are input in terminal with space '_' b/w them, they are treated as two seperate inputs
+ eg. 49 single input
+     4 9 two inputs
+     4+9 three inputs
+
+
+if(expression) turns into boolean 
+in boolean, any number except 0 means True
+so if(5) means true, so condition works
+if (0) is false, condition will not work
+
+
+for(;condition;) // valid code
+
+break : leave sthe loop
+continue : skips to the next iteration
+
+for pattern printing : 
+outside loop : no of rows
+inside loop : no of columns
+
+Functions:
+main functions int main() always runs first before other void functions
+
+after the function called ends, the line shifts back to the function where it was called and proceeds fron there.
+
+created function void() should be above main() function
+
+void() does not return value. int,float,etc functions return the same type of value
+
+if function returm type is int() then the finalm value returned should also be an INTEGER        
+
+#include<cmath> for sqrt()
+
+scope : variable declared inside 'for" fn can be modified and printed only within those functions
+
+variables have diff uses in different functions eg. hello(int i) not same as bye(int i) in the same code
+
+cout<<&x : address of variable
+
+global variable : declared outside any function eg main() void() int() etc
+
+default values in parameters must be gven to each variable eg. int fun(i=1,j=2,k=3)
+
+global variable gets modified globally if modified locally
+
+POINTERS :
+cout<<sizeof(datatype) gives bytes of space for that datatype
+
+ARRAY is PPASSED BY REFERENCE  to other functions(address is passed), updating the array will update it in all the functions.
