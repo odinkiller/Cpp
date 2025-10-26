@@ -35,6 +35,8 @@ int main()
     nums.push_back(4);
     nums.push_back(5);
     int n=nums.size();
+    if(k>n)
+    k=k%n;
     reversePart(0,5-k-1,nums);
     reversePart(5-k,4,nums);
     reversePart(0,n-1,nums);

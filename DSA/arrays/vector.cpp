@@ -149,3 +149,89 @@
 //         cout<<v.at(i)<<" ";
 //     }
 // }
+
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// int main()
+// {
+//     vector<int> v;
+//     v.push_back(1);
+//     v.push_back(0);
+//     v.push_back(1);
+//     v.push_back(0);
+//     v.push_back(1);
+//     v.push_back(0);
+//     v.push_back(1);
+//     v.push_back(0);
+//     int nos=0;
+//     int noo=0;
+//     for(int i=0;i<v.size();i++)
+//     {
+//         if(v.at(i)==0)
+//         nos++;
+//         else
+//         noo++;
+//     }
+//     for(int k=0;k<v.size();k++)
+//     {
+//         if(k<nos)
+//         {
+//             v.at(k)=0;
+//             cout<<v.at(k)<<" ";
+//         }
+//         else
+//         {
+//             v.at(k)=1;
+//             cout<<v.at(k)<<" ";
+//         }
+//     }
+   
+// }
+
+#include<iostream>
+#include<vector>
+using namespace std;
+void display(vector<int>& v)
+{
+    for(int i=0;i<v.size();i++)
+    {
+        cout<<v.at(i)<<" ";
+    }
+    cout<<endl;
+    return;
+}
+int main()
+{
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(-2);
+    v.push_back(3);
+    v.push_back(-4);
+    v.push_back(0);
+    v.push_back(-9);
+    v.push_back(22);
+    v.push_back(-17);
+    v.push_back(5);
+    display(v);
+    int i=0;
+    int j=v.size()-1;
+    while(i<j)
+    {
+        if(v.at(i)<0)
+        i++;
+        if(v.at(j)>0)
+        j--;
+        if(v.at(i)==0 || v.at(j)==0)
+        break;
+        if(v.at(i)>0 && v.at(j)<0)
+        {
+            int temp=v.at(i);
+            v.at(i)=v.at(j);
+            v.at(j)=temp;
+            i++;
+            j--;
+        }
+    }
+    display(v);
+}
