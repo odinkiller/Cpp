@@ -57,3 +57,5 @@ POINTERS :
 cout<<sizeof(datatype) gives bytes of space for that datatype
 
 ARRAY is PPASSED BY REFERENCE  to other functions(address is passed), updating the array will update it in all the functions.
+
+in 2d array, mentioning column while declaring or initialising is mandatory
